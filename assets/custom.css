@@ -1,0 +1,31 @@
+#alert {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text color */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Set a high z-index value to ensure the div appears in front of everything */
+    display: block;
+}
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0069d9;
+  }
+  #cancel{
+   height: 43px
+  }
