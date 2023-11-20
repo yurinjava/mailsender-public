@@ -76,16 +76,16 @@ echo '  <link rel="icon" type="image/x-icon" href="../assets/site-icon.png">';
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'naledi.mailer@gmail.com';                     //SMTP username
-        $mail->Password   = 'ggln uosq edog ezrf';                               //SMTP password
+        $mail->Username   = 'your@email.com';                     //SMTP username
+        $mail->Password   = 'your app password';                               //SMTP password
         $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('naledi.mailer@gmail.com', 'Naledi Mailer');
+        $mail->setFrom('your@email.com', 'Your Email');
         $mail->addAddress($message->__get('recipient'), );     //Add a recipient
        
-        $mail->addReplyTo('naledi.mailer@gmail.com', 'please dont');
+        $mail->addReplyTo('your@email.com', 'please dont');
         //$mail->addCC('cc@example.com');
         //$mail->addBCC('bcc@example.com');
     
